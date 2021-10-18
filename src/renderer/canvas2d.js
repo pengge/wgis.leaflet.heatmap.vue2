@@ -116,6 +116,7 @@ var Canvas2dRenderer = (function Canvas2dRendererClosure() {
           }
       }
       if(heatclickPoints.length>0){
+        event.preventDefault();
         that._coordinator.emit('heatmapclick', {
           unikey:  heatclickPoints
         });

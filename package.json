@@ -1,6 +1,6 @@
 {
   "name": "wgis.leaflet.heatmap.vue2",
-  "version": "205.0.4",
+  "version": "205.0.9",
   "description": "modify Heatmaps add click",
   "homepage": "",
   "author": {
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "https://github.com/pengge/wgis.leaflet.heatmap.vue2"
   },
-  "main": "build/heatmap.js",
+  "main": "build/wgis.leaflet.heatmap.vue2.js",
   "devDependencies": {
     "grunt": ">= 0.4.1",
     "coffee-script": ">= 1.6.3",

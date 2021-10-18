@@ -10,8 +10,9 @@
   if (typeof module !== "undefined" && module.exports) {
     module.exports = factory(
       require('wgis.leaflet.heatmap.vue2'),
-      require('leaflet')
+      global.Leaflet = global.Leaflet || {}
     );
+    
   } else if (typeof define === "function" && define.amd) {
     define(['wgis.leaflet.heatmap.vue2', 'leaflet'], factory);
   } else {

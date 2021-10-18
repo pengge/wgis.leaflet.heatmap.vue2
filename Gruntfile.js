@@ -15,7 +15,7 @@ module.exports = function(grunt) {
       },
       dist: {
         src: packagejson.buildFiles,
-        dest: 'build/heatmap.js'
+        dest: 'build/wgis.leaflet.heatmap.vue2.js'
       }
     },
     uglify: {
@@ -26,8 +26,8 @@ module.exports = function(grunt) {
         beautify: false
       },
       dist: {
-        src: 'build/heatmap.js',
-        dest: 'build/heatmap.min.js'
+        src: 'build/wgis.leaflet.heatmap.vue2.js',
+        dest: 'build/wgis.leaflet.heatmap.vue2.min.js'
       }
     },
     jshint: {

@@ -1,10 +1,10 @@
 /*
- * wgis.leaflet.heatmap.vue2 v205.0.4 | JavaScript Heatmap Library
+ * wgis.leaflet.heatmap.vue2 v205.0.9 | JavaScript Heatmap Library
  *
  * Copyright 2008-2016 Patrick Wied <heatmapjs@patrick-wied.at> - All rights reserved.
  * Dual licensed under MIT and Beerware license 
  *
- * :: 2021-10-07 21:49
+ * :: 2021-10-10 11:22
  */
 ;(function (name, context, factory) {
 
@@ -372,6 +372,7 @@ var Canvas2dRenderer = (function Canvas2dRendererClosure() {
           }
       }
       if(heatclickPoints.length>0){
+        event.preventDefault();
         that._coordinator.emit('heatmapclick', {
           unikey:  heatclickPoints
         });
